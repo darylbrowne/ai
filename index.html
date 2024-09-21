@@ -742,6 +742,8 @@
   height: var(--player-button-width);
   cursor: pointer;
   padding: 0;
+  margin: 0 1vw 0 0;
+
 }
 
 .timeline {
@@ -790,7 +792,7 @@
 }
 
 .timeline::-webkit-slider-thumb:hover {
-  background-color: var(--shade);
+  background-color: #522613;
 }
 
 .timeline:hover::-webkit-slider-thumb {
@@ -798,7 +800,7 @@
 }
 
 .timeline::-moz-range-thumb:hover {
-  background-color: var(--shade);
+  background-color: #522613;
 }
 
 .timeline:hover::-moz-range-thumb {
@@ -806,7 +808,7 @@
 }
 
 .timeline::-ms-thumb:hover {
-  background-color: var(--shade);
+  background-color: #522613;
 }
 
 .timeline:hover::-ms-thumb {
@@ -841,6 +843,7 @@
   height: var(--sound-button-width);
   cursor: pointer;
   padding: 0;
+  margin: 0 0 0 1vw;
 }
 
 figcaption {
@@ -1038,6 +1041,9 @@ audio {
 		  }
 		  .audio-player {
 		  	display: block;
+		  }
+		  .audio-player i {
+		  	font-size: 5vw;
 		  }
 		  section.scrolls.cover a {
 			display: none;
