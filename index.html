@@ -446,8 +446,16 @@
 	<style id="all">
 		:root {
 			--shade : #f7be84;
+			--thumb: #f7be84;
+			--hover: #ffffff;
 			/*--background : #eabda3;*/
 			--background : #522613;
+			--ball: 1.5em;
+			--buttons: 5vw;
+			--track: 2vw;
+			--fill: #522613;
+			--empty: #000000;
+		  	--space: 1vw;
 		}
 
 		@media all {
@@ -714,9 +722,6 @@
 
 
 .audio-player {
-  --player-button-width: 5vw;
-  --sound-button-width: 5vw;
-  --space: 1vw;
   width: 50vw;
   display: block;
   margin: 2vw;
@@ -738,8 +743,8 @@
 .player-button {
   background-color: transparent;
   border: 0;
-  width: var(--player-button-width);
-  height: var(--player-button-width);
+  width: var(--buttons);
+  height: var(--buttons);
   cursor: pointer;
   padding: 0;
   margin: 0 1vw 0 0;
@@ -748,51 +753,51 @@
 
 .timeline {
   -webkit-appearance: none;
-  width: calc(100% - (var(--player-button-width) + var(--sound-button-width) + var(--space)));
-  height: 2vh;
-  background-color: var(--shade);
+  width: calc(100% - (var(--buttons) + var(--buttons) + var(--space)));
+  height: var(--track);
+  background-color: var(--empty);
   border-radius: 5px;
   background-size: 0% 100%;
-  background-image: linear-gradient(#cb5a28, #cb5a28);
+  background-image: linear-gradient(var(--fill), var(--fill));
   background-repeat: no-repeat;
   margin-right: var(--space);
 }
 
 .timeline::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 1em;
-  height: 1em;
+  width: var(--ball);
+  height: var(--ball);
   border-radius: 50%;
   cursor: pointer;
   opacity: 0;
   transition: all .1s;
-  background-color: #803c1b;
+  background-color: var(--thumb);
 }
 
 .timeline::-moz-range-thumb {
   -webkit-appearance: none;
-  width: 1em;
-  height: 1em;
+  width: var(--ball);
+  height: var(--ball);
   border-radius: 50%;
   cursor: pointer;
   opacity: 0;
   transition: all .1s;
-  background-color: #803c1b;
+  background-color: var(--thumb);
 }
 
 .timeline::-ms-thumb {
   -webkit-appearance: none;
-  width: 1em;
-  height: 1em;
+  width: var(--ball);
+  height: var(--ball);
   border-radius: 50%;
   cursor: pointer;
   opacity: 0;
   transition: all .1s;
-  background-color: #803c1b;
+  background-color: var(--thumb);
 }
 
 .timeline::-webkit-slider-thumb:hover {
-  background-color: #522613;
+  background-color: var(--hover);
 }
 
 .timeline:hover::-webkit-slider-thumb {
@@ -800,7 +805,7 @@
 }
 
 .timeline::-moz-range-thumb:hover {
-  background-color: #522613;
+  background-color: var(--hover);
 }
 
 .timeline:hover::-moz-range-thumb {
@@ -808,7 +813,7 @@
 }
 
 .timeline::-ms-thumb:hover {
-  background-color: #522613;
+  background-color: var(--hover);
 }
 
 .timeline:hover::-ms-thumb {
