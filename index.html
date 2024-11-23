@@ -82681,7 +82681,7 @@ function convertBase(value, from_base, to_base) {
 						const selMonths = numMonths.map(monthOptions);
 						const selDays = numDays.map(dayOptions);
 						const ad = "Get the <i>Take-a-Moment</i> App";
-						const vo = "https://02b7cf4.netsolhost.com/audio/q" + (Math.floor(Math.random() * 390) + 1) + ".mp3";
+						const vo = "https://02b7cf4.netsolhost.com/audio/q" + (Math.floor(Math.random() * 520) + 1) + ".mp3";
 						const nav = !(window.location.hostname).includes(app) ? "<form onsubmit='return openBook();'><span>A <i class='fa fa-gift' aria-hidden='true'></i> for their</span><select id='theMonth'>" + selMonths + "</select><select id='theDay'>" + selDays + "</select><button type='submit' name='submit'><i class='fa fa-birthday-cake' aria-hidden='true'></i></button></form>" : "<form><span class='app'>" + ad + "<span></form>";
 						const voice = "<figure><sup>0</sup><div class='audio-player'><audio src='" + vo + "'></audio><div class='controls'><button class='player-button'><i class='fa fa-play' aria-hidden='true'></i></button><input type='range' class='timeline' max='100' value='0'><button class='sound-button'><i class='fa fa-volume-up' aria-hidden='true'></i></button></div></div></figure>";
 
@@ -82730,7 +82730,7 @@ function changeTimelinePosition () {
 
 function audioEnded () {
   playerButton.innerHTML = playIcon;
-  audio.src = "https://02b7cf4.netsolhost.com/audio/q" + (Math.floor(Math.random() * 390) + 1) + ".mp3";
+  audio.src = "https://02b7cf4.netsolhost.com/audio/q" + (Math.floor(Math.random() * 520) + 1) + ".mp3";
 }
 
 function changeSeek () {
