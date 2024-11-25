@@ -35,7 +35,6 @@
 	<link rel="apple-touch-icon" href="images/be-icon.png" />
 	<link rel="apple-touch-icon-precomposed" href="images/be-icon.png" />-->
 	<script type="text/javascript">
-
 		const app = 's-a.lt';
 		let cause1 = [],
 			effect2 = [],
@@ -1039,6 +1038,9 @@ audio {
 		  body {
 		  	height: 70%;
 		  }
+		  figure {
+		  	display: block;
+		  }
 		  canvas#qr_0  {
 		  	display: block;
 		    -ms-transform: rotate(45deg);
@@ -1061,7 +1063,7 @@ audio {
 		  body {
 		  	height: 100%;
 		  }
-			section.scrolls:not(.frame) canvas#qr_0 {
+			section.scrolls:not(.frame) canvas#qr_0, figure {
 		  	display: none;
 		  }
 		  .audio-player {
