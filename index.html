@@ -450,7 +450,7 @@
 			/*--background : #eabda3;*/
 			--background : #522613;
 			--ball: 1.5em;
-			--buttons: 5vw;
+			--buttons: 3em;
 			--track: 2vw;
 			--fill: #522613;
 			--empty: #000000;
@@ -492,18 +492,7 @@
 				right: 0;
 				top: 37%;
 			}
-			section.scrolls:not(.frame) canvas#qr_0 {
-				height: 30vw;
-				width: 30vw;
-				position: relative;
-				display: block;
-				margin: auto;
-				top: 0;
-			}
-			section.scrolls.cover a {
-				display: none;
-			}
-			.sign  canvas {
+			section.scrolls.cover canvas, .sign  canvas {
 				display: none;
 			}
 			canvas#qrcode, .sign i.fa {
@@ -513,6 +502,26 @@
 				width: 1.3em;
 				position: relative;
 			}
+
+.svg-icon {
+    position: relative;
+    flex-shrink: 0;
+    height: 3.75vw;
+    width: 3.75vw;
+    top: -.5vw;
+    fill: var(--shade);
+   transition: fill .3s;
+   vertical-align: middle;
+}
+
+.visually-hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}			
 
 			section.scrolls.wall article {
 				width: 33%;
@@ -721,7 +730,7 @@
 
 
 .audio-player {
-  width: 50vw;
+  width: 60vw;
   display: block;
 }
 
@@ -877,21 +886,22 @@ audio {
 				box-sizing: border-box;
 			}
 			@-webkit-keyframes m0 {
-			  0%,20%,75%,100% { opacity: var(--change); }
-			  50%,65% { opacity: 1; }
+			  0%,5%,95%,100% { opacity: var(--change); }
+			  10%,90% { opacity: 1; }
 			}
 			@keyframes m0 {
-			  0%,20%,75%,100% { opacity: var(--change); }
-			  50%,65% { opacity: 1; }
+			  0%,5%,95%,100% { opacity: var(--change); }
+			  10%,90% { opacity: 1; }
 			}
 			@-webkit-keyframes m1 {
-			  0%,20%,75%,100% { opacity: var(--change); }
-			  50%,65% { opacity: 1; }
+			  0%,5%,95%,100% { opacity: var(--change); }
+			  10%,90% { opacity: 1; }
 			}
 			@keyframes m1 {
-			  0%,20%,75%,100% { opacity: var(--change); }
-			  50%,65% { opacity: 1; }
+			  0%,5%,95%,100% { opacity: var(--change); }
+			  10%,90% { opacity: 1; }
 			}
+
 			html, section,article, p, span, a { 
 				background: none;
 			}		
@@ -925,7 +935,7 @@ audio {
 				font-size: 3.75vw;
 		    }
 			p {
-				opacity: 0;
+				opacity: 1;
 			    -webkit-animation: m0 30s ease infinite;
 			    animation: m0 30s ease infinite;
 			}
@@ -1059,25 +1069,19 @@ audio {
 		  body {
 		  	height: 70%;
 		  }
-		  figure {
-		  	display: block;
-		  }
-		  canvas#qr_0  {
+		  /*canvas#qr_0  {
 		  	display: block;
 		    -ms-transform: rotate(45deg);
 		    -webkit-transform: rotate(45deg);
 		    transform: rotate(45deg);
-		  }
+		  }*/
 		  .audio-player {
-		  	margin-top: 4vh;
+		  	margin-top: 1vh;
 		  	display: block;
 		  }
 		  .audio-player i {
-		  	font-size: 5vw;
+		  	font-size: 3em;
 		  }
-		  section.scrolls.cover a:not(.bookagent) {
-			display: none;
-			}
 			section.scrolls.cover a.bookagent {
 				display: inline-block;
 				bottom: 3vw;
@@ -1090,12 +1094,6 @@ audio {
 		@media (min-aspect-ratio: 15/16) {
 		  body {
 		  	height: 100%;
-		  }
-			section.scrolls:not(.frame) canvas#qr_0, figure {
-		  	display: none;
-		  }
-		  .audio-player {
-		  	display: none;
 		  }
 		  section.scrolls.cover a {
 			display: block;
@@ -1145,14 +1143,6 @@ Yesterdays and tomorrows lack guarantees,
 Which makes your today all the more free:
 
 You're exactly where you're supposed to be.
-
-
-
-Take a moment...
-
-Pause. Unroll it.
-
-<canvas id="qrcode"></canvas> to <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i> via <i class="fa fa-mobile" aria-hidden="true"></i>
 
 
 
@@ -16334,11 +16324,11 @@ Daily putting sure and organized effort first.
 
 
 
-People are set to keep doing as they choose;
+People will keep doing as they choose.
 
-What's up to you is whether you'll win or lose
+Whether you yourself will win or lose
 
-Based on their goals or doing what's in you.
+Depends on the distractions you refuse.
 
 
 
@@ -17278,11 +17268,11 @@ And allows your story itself to tell.
 
 
 
-How much easier when you have more help.
+How much easier when you have help?
 
-How much easier when you welcome wealth.
+How much easier when sincerely felt?
 
-How much easier when you position yourself.
+How much easier when from yourself?
 
 
 
@@ -19320,17 +19310,17 @@ So handle them with heart, not with hand.
 
 Even with both feet planted on the ground,
 
-Your spirit can be felt, traveling all around
+Your spirit can be felt - it actively abounds.
 
-As you treasure all the people you've found.
+Your impact seems subtle, but is profound.
 
 
 
-When suffering is what you've been granted,
+Challenges are what you've been granted.
 
-There's no point wishing to feel enchanted:
+It's pointless, longing to feel enchanted:
 
-You'll have to bloom where you are planted.
+For today, bloom where you are planted.
 
 
 
@@ -19998,11 +19988,11 @@ So you can both be heard as well as hear.
 
 
 
-There's how you're choosing to see it unfold,
+There's how you're helping it all unfold,
 
-Then there's how others want this story told:
+Then there's how others prefer it retold
 
-Neither is worth enough to be bought or sold.
+(Attention is paid - not bought or sold).
 
 
 
@@ -24611,7 +24601,7 @@ You've been offered what you don't want:
 
 Be clear it's something you've already got.
 
-You'll end up having to do this quite a lot.
+You'll end up having to do this (a lot).
 
 
 
@@ -26935,11 +26925,11 @@ To your inner world, get exposure.
 
 
 
-You're never kept where you don't wish to be.
+Be freed from where you don't wish to be.
 
-First, you'll find your way out non-physically,
+First, find your way out non-physically,
 
-Then you'll shift things to match your reality.
+Then shift things to match your reality.
 
 
 
@@ -27095,11 +27085,11 @@ An unarguably accurate name is vital.
 
 
 
-There's far more here than you'll ever need;
+There's more here than you need.
 
-Far from being an invitation toward greed,
+But rather than yielding to greed,
 
-It's one hint there's far more inside to feel.
+Figure out what more even means.
 
 
 
@@ -31599,11 +31589,11 @@ Make your day focused, not filled.
 
 
 
-You're being forged by your own life's flame.
+You're being forged by your life's flame.
 
-You're being molded, so try not to complain.
+Being molded, it's tempting to complain.
 
-You're being transformed, and love remains.
+Being transformed, notice love remains.
 
 
 
@@ -33183,11 +33173,11 @@ Your feelings bend reality to your reactions.
 
 
 
-Most of what you read, you'll mostly forget -
+Most of what you read, you soon forget -
 
-But you'll always remember, once you've met
+But you remember everyone you've met
 
-Someone who, though in crisis, wasn't upset.
+Who, despite crises, continued to bless.
 
 
 
@@ -33207,11 +33197,11 @@ You are more than what you do.
 
 
 
-There is nothing to worry about, alright?
+There's nothing to fret about, alright?
 
-Even if you're comfortable being uptight,
+Even if you were urged to be uptight,
 
-Deep down, you're feeling something bright.
+Underneath, there's something bright.
 
 
 
@@ -33559,11 +33549,11 @@ Count your blessings - and by the plateful.
 
 
 
-To conversation's momentum, don't just bow.
+To talking's momentum, don't just bow.
 
-You didn't initiate, but you're part of it now.
+Question: "Am I swept up in it now?"
 
-Answer: "You would rather be feeling how?"
+Answer: "I'd rather be feeling how?"
 
 
 
@@ -33639,11 +33629,11 @@ Even right now - you're making even more!
 
 
 
-When you're in the right spot, things click:
+When you're aligned, things click:
 
-Opportunities land all around you and stick.
+Petals land all around you and stick.
 
-So find today's rightest right spot - then sit.
+So find the floweriest spot, and sit.
 
 
 
@@ -34873,9 +34863,9 @@ What one thing made you feel like a master?
 
 You've done amazing work. Recognize this.
 
-But for what's to come? It's the slightest hint.
+Now take chances that wouldn't have fit.
 
-Take some new chances that didn't used to fit.
+The past was just your potential's hint.
 
 
 
@@ -34911,11 +34901,11 @@ The rewards of you surrendering control.
 
 
 
-Knowing what you could've done but didn't,
+Knowing you could have (but didn't),
 
-You'll do better, so long as you're not flippant
+You'll do better. Let them be flippant.
 
-About where you need to be more proficient.
+Focus where you can grow proficient.
 
 
 
@@ -36095,11 +36085,11 @@ Give and receive this respect in kind.
 
 
 
-In situations where the mind sincerely ought,
+In situations where the mind ought,
 
-Emotions aren't to be substituted for thought
+Emotions cannot substitute thought
 
-Lest in a debate's net you'd like to be caught.
+(The catcher gets the catch caught).
 
 
 
@@ -38351,7 +38341,7 @@ To waste most of your time.
 
 
 
-Put it behind you, it is a waste
+Put it behind you, it is a waste -
 
 Of your own good sense and taste.
 
@@ -39335,11 +39325,11 @@ Mystery above can mean chaos below.
 
 
 
-Celebrate about things that make good sense,
+Cherish the people, not the events.
 
-About goodness with a reach that's immense,
+Value the steady over the intense.
 
-About greatness that's insightful, not intense.
+Celebrate what makes lasting sense.
 
 
 
@@ -43120,11 +43110,11 @@ Is it now clear what to go forward with?
 
 
 
-It won't stay like this (don't get too attached).
+This will change (Don't get so attached).
 
-Teach yourself how to find your own way back
+Teach yourself to find your own way back
 
-To where your efforts and allies evenly match.
+To where efforts and allies evenly match.
 
 
 
@@ -43216,11 +43206,11 @@ What you can do is by life be taught.
 
 
 
-It's not something for you to discuss or debate,
+It is not something to discuss or debate,
 
-Nor is it something you'd need to demonstrate:
+Nor do you need to prove or demonstrate:
 
-Do what matters most to you, no further delay.
+Do what matters most to you - no delays.
 
 
 
@@ -43296,11 +43286,11 @@ And get back to what your life is all about.
 
 
 
-There's one preferred emotion, a certain feeling
+There's a better emotion, a warmer feeling
 
-You tend toward, with whatever you're dealing:
+You tend toward, with what you're dealing -
 
-Is this a sensation you'd associate with healing?
+A sensation that generates inner healing.
 
 
 
@@ -44704,11 +44694,11 @@ Let nature seep deep into your mind.
 
 
 
-Don't worry, they'll return if you're real.
+Relax, they'll return if you're real.
 
-If you're concerned with how they all feel
+So long as you attend to how you feel,
 
-You'll create for yourself perpetual appeal.
+You'll have your own perpetual appeal.
 
 
 
@@ -45168,11 +45158,11 @@ Either way, fill your directness with love.
 
 
 
-There are more factors than you've considered.
+It spreads past what you've considered.
 
-So to ensure the crops don't become withered,
+Regardless, your crops will not wither
 
-Plant them where more nutrients get delivered.
+Planting where nutrients get delivered.
 
 
 
@@ -47480,11 +47470,11 @@ Do fewer things better, and one thing best.
 
 
 
-Even though today feels sunny, nice and warm,
+Though today feels sunny, nice, and warm,
 
-You shouldn't go all the way there to perform.
+Don't wander too far from here to perform.
 
-Be here to weather tomorrow's passing storm.
+Home can weather tomorrow's brief storm.
 
 
 
@@ -48120,11 +48110,11 @@ So try out a few before your choice is set.
 
 
 
-You can bear anything that you frame rightly,
+You can bear anything you frame rightly,
 
-But don't frame the situation so tightly that
+But don't frame the situation so tightly:
 
-You can't change your ways ever so slightly.
+Make sure you can shift ever so slightly.
 
 
 
@@ -52544,7 +52534,7 @@ Questions cause and effect your impact.
 
 
 
-Where can you draw a parallels between
+Where can you draw a parallel between
 
 Yesterday and what appears to now be?
 
@@ -71897,11 +71887,11 @@ How can you emulate some of this movement?
 
 
 
-That they can amuse is worthy of admiration.
+Be bold in a way that's kind, not brazen.
 
-Being funny in a way that's kind, not brazen,
+You will earn immeasurable admiration
 
-Means you've braved a bit of experimentation.
+(It might take a bit of experimentation).
 
 
 
@@ -72097,11 +72087,11 @@ Bounding them in like waves of one ocean
 
 
 
-Does it relax you into something of a trance?
+Does it slide you into a sort of trance?
 
-It's admirable how you've used this to enhance
+Into a state that lets you feel enhanced?
 
-Your fluency in translating emotions' parlance.
+Are you letting thought and action dance?
 
 
 
@@ -72497,11 +72487,11 @@ Shows you require no enhancement.
 
 
 
-You're glowing with excitement,
+You were glowing with excitement,
 
 Growing through being delighted
 
-(Before any wrongs got righted).
+(Long before wrongs got righted).
 
 
 
@@ -73361,11 +73351,11 @@ You feel you've done your very best.
 
 
 
-Will it feel the same if you don't go on ahead?
+Could it work best if you didn't go ahead?
 
-How'd you feel doing something else instead?
+Could you be doing something else instead?
 
-Overall, where is your goodness is overspread?
+Could your goodness be more wisely spread?
 
 
 
@@ -73465,11 +73455,11 @@ Acknowledgement makes these things real.
 
 
 
-Doesn't matter whether a solution is possible -
+Regardless how nearly impossible,
 
-Doesn't matter whether the chasm is crossable.
+Or how normally-so uncrossable -
 
-It's your feelings for which you're responsible.
+Your momentum is now responsible.
 
 
 
@@ -74577,11 +74567,11 @@ Does it feel received, though not given?
 
 
 
-Doesn't matter how they operate - proceed.
+Regardless of how they operate, proceed.
 
 Acceptance? Cooperation? There's no need.
 
-It's the vast inner world that you must lead.
+It's your inner world that you must lead.
 
 
 
@@ -75233,11 +75223,11 @@ There is no question you're leveling up.
 
 
 
-If you're asking yourself the wrong question,
+In asking yourself the wrong question,
 
-Then you've misallocated too much attention
+You're misallocating genuine attention
 
-And need to return to your original intention.
+Away from the pure, original intention.
 
 
 
@@ -76665,11 +76655,11 @@ It means you represent what they imagined.
 
 
 
-Just because they now regret what happened,
+They may now regret what happened,
 
-Doesn't mean they'll now be all you imagined:
+But their resistance hasn't flattened;
 
-Your heap of critics isn't gone - just flattened.
+Spot waves like a stormy sea captain.
 
 
 
@@ -76921,11 +76911,11 @@ But you're now that much more polished.
 
 
 
-Don't forget all the things you've accomplished
+Remember the feats you've accomplished.
 
-That left others awed, amazed, and astonished;
+They were awed, amazed, and astonished.
 
-Will you decide what's needed versus wanted?
+Now get to what it was that you wanted.
 
 
 
@@ -77785,11 +77775,11 @@ Understand those who understanding eludes.
 
 
 
-Waiting for them to understand won't be wise.
+Waiting for them to get it won't be wise.
 
-By the time they comprehend all that's inside,
+For, by the time they open what's inside,
 
-You'll be even higher on your persevering rise.
+You will have waited far too long to rise.
 
 
 
@@ -77817,11 +77807,11 @@ Do you feel this more than ever before?
 
 
 
-All you've been through, all you've endured,
+There are a few things you've endured,
 
-Led you to where you've been moving toward -
+In your steady, faithful moving toward.
 
-An inner sanctuary you've never visited before.
+Next comes a peace never known before.
 
 
 
@@ -77905,11 +77895,11 @@ There's simply more you're made of.
 
 
 
-Because there's so much more you're made of,
+There's so much more you're made of.
 
-You have two options: Say you've just begun,
+That's how you keep getting back up.
 
-Or that you're now getting yourself back up.
+That's why you'll answer, "Because."
 
 
 
@@ -80393,11 +80383,11 @@ Beyond insight, you need a vision.
 
 
 
-Having a vision has naught to do with sight,
+Watering a vision can grow insight
 
-Nor does it automatically make things right:
+Into all you do, and all you might -
 
-A vision awakens your day by dreaming a life.
+Dreaming you one awakened life.
 
 
 
@@ -80449,19 +80439,19 @@ You need a far more removed configuration.
 
 
 
-It's deep within a swarm of notifications
+Not one more unnecessary notification!
 
-That has nothing to do with this situation.
+Your focus must be on but one situation -
 
-Block today's. And yesterday's? Eradication.
+Today and offering it one simplification.
 
 
 
-The problem is the number of notifications.
+Silence the incoming notifications.
 
-They interrupt all conscious communication.
+Engage in conscious communication.
 
-To create, you need a degree of isolation.
+Retreat into creative isolation.
 
 
 
@@ -80473,11 +80463,11 @@ To heal, things must be mended.
 
 
 
-They're burdening you with notifications
+They burden you with notifications.
 
-For which this isn't the right occasion /
+But this isn't the right occasion.
 
-Doesn't deserve a moment's consideration.
+Your time deserves consideration.
 
 
 
@@ -81857,6 +81847,22 @@ Take your silent, patient process back.
 
 
 
+Neither backwards cling, nor forward fear.
+
+Nowhere else are you this beautifully here
+
+(Now is your likeliest chance to be clear).
+
+
+
+Remember to follow the path of ease
+
+(Forget there's anyone else to please):
+
+You now have exactly what you need.
+
+
+
 This choice is the essence of enough -
 
 This is the one that sums them all up:
@@ -81892,7 +81898,7 @@ function convertBase(value, from_base, to_base) {
   var from_range = range.slice(0, from_base);
   var to_range = range.slice(0, to_base);
   var dec_value = value || null;
-  var new_value ;
+  var new_value = '';
 
   if (value) {
 	  	value.split('').reverse().reduce(function (carry, digit, index) {
@@ -81903,6 +81909,7 @@ function convertBase(value, from_base, to_base) {
 	  while (dec_value > 0) {
 	    new_value = to_range[dec_value % to_base] + new_value;
 	    dec_value = (dec_value - (dec_value % to_base)) / to_base;
+	    //console.log('new_value = ' + new_value + ' | dec_value = ' + dec_value);
 	  }
   }
   
@@ -82019,8 +82026,8 @@ function convertBase(value, from_base, to_base) {
 				document.body.prepend(qr_qa);
 				encode(xx);
 
-			} else if (convertBase(xx,23,10)){
-				console.log('2.5 continued... see? ' + convertBase(xx,23,10));
+			} else if (parseInt(xx,23)){
+				console.log('2.5 continued... see? ' + parseInt(xx,23));
 			} else {
 				decode(xx);
 				let r = document.querySelector(':root');
@@ -82033,10 +82040,10 @@ function convertBase(value, from_base, to_base) {
 
 			if (yy && yy.length > 0 && yy.length < 4) {
 				//convertBase(value, from_base, to_base);
-				let zz = convertBase(yy, 23, 10);
+				let zz = parseInt(yy, 23);
 				console.log('pre-conversion = ' + yy);
 				console.log('raw conversion = ' + zz);
-				console.log('test conversion 1 = ' + convertBase(yy, 23, 10));
+				console.log('test conversion 1 = ' + parseInt(yy, 23));
 				console.log('test conversion 2 = ' + convertBase(zz.toString(), 10, 23));
 			}
 
@@ -82045,7 +82052,9 @@ function convertBase(value, from_base, to_base) {
 			if (supQRs.length < 100) {
 				for(let i = 0; i < supQRs.length; i++){
 					let qr_p = document.createElement("canvas");
-						qr_p.setAttribute("title", "qr_"+i);
+					let qa_a = convertBase((supQRs[i].innerText), 10, 23);
+					let qa_b = parseInt(qa_a.toString(), 23);
+						qr_p.setAttribute("title", "qr_"+ i + "=" + supQRs[i].innerText + "|" + qa_a + "|" + qa_b);
 						qr_p.setAttribute("id", "qr_"+i);
 						document.querySelectorAll("sup")[i].after(qr_p);
 				}
@@ -82053,7 +82062,9 @@ function convertBase(value, from_base, to_base) {
 				for(let i = 0; i < supQRs.length; i++){
 				  let rawOne = supQRs[i].innerText;
 				  let encOne = convertBase(rawOne, 10, 23);
+				  let decOne = parseInt(encOne.toString(), 23);
 				  let salty = 'http://' + app + '?' + encOne;
+				  console.log('rawone = ' + rawOne + ' | rawOne.length = ' + rawOne.length+ ' encOne = ' + encOne + ' | salty = ' + salty + ' | decoded = ' + decOne);
 				  new QRious({foreground: '#522613',backgroundAlpha: 0,element: document.getElementById('qr_'+i),value: salty});
 				}
 
@@ -82097,8 +82108,8 @@ function convertBase(value, from_base, to_base) {
 			"hex"	: "#522613"
 		}
 	];
-	const modes = ['~', 'promo', 'full', 'wall', 'audiobook', 'book1', 'book2', 'book3', 'flag', 'frame', 'labels', 'policy', 'sign', 'script', 'scrolls', 'uniques'];
-	const startAt = 6;
+	const modes = ['~', 'promo', 'full', 'wall', 'audiobook', 'book1', 'book2', 'longest', 'flag', 'frame', 'labels', 'policy', 'sign', 'script', 'scrolls', 'uniques','widest'];
+	const startAt = 5;
 
 	var local = false;
 	var shades = [];
@@ -82382,7 +82393,7 @@ function convertBase(value, from_base, to_base) {
 					console.log('my.journey(' + inner + ')');
 					let fate, message, toggle;
 					let hash = Number((location.hash).substring(1)) || location.hash;
-					let quer = Number(convertBase((location.search).substring(1),23,10)) || location.search;
+					let quer = Number(parseInt((location.search).substring(1),23)) || location.search;
 					let shade = my.shade();
 				  const element = document.getElementsByTagName("p")[0];
 					document.body.style.setProperty('--shade', shade['hex']);						
@@ -82445,6 +82456,9 @@ function convertBase(value, from_base, to_base) {
 					
 					hash = Number(my.strHash()) || my.strHash();
 					qstr = Number(my.strQuery()) || my.strQuery();
+
+					console.log('%%%%%%%  ' + hash);
+					console.log('%%%%%%%  ' + qstr);
 					var todaysDate = new Date();
 
 					function convertDate(date) {
@@ -82494,16 +82508,17 @@ function convertBase(value, from_base, to_base) {
 					console.dir(modes);
 					console.dir(isType);
 					console.log('II. location.search : ' + location.search);
-					console.log('III. isNaN(convertBase(my.strQuery(),23,10)) : ' + isNaN(convertBase(my.strQuery(),23,10)));
+					console.log('III. isNaN(parseInt(my.strQuery(),23)) : ' + isNaN(parseInt(my.strQuery(),23)));
 
-					if (modes.includes(isType) || (location.search && isNaN(convertBase(my.strQuery(),23,10)))) {
+					if (modes.includes(isType) || (location.search && isNaN(parseInt(my.strQuery(),23)))) {
 					//if (modes.includes(isType)) {
-						console.log('-----(modes.includes(isType) || (location.search && isNaN(convertBase(my.strQuery(),23,10))))');
+						console.log('-----(modes.includes(isType) || (location.search && isNaN(cparseInt(my.strQuery(),23)))');
 						document.getElementById("screen").remove();
 						let r = document.querySelector(':root');
 						r.style.setProperty('--background', 'white');
 						r.style.setProperty('--shade', 'black');
-
+						let totalscrolls = 0;
+						let custom = '';
 						switch (isType) {
 							case 'full' :
 								pages = pages.slice(startAt).reverse();
@@ -82513,9 +82528,11 @@ function convertBase(value, from_base, to_base) {
 
 								break;
 							case 'book1' :
-								var perchapter = 60, totalscrolls = 1440, lastscroll = totalscrolls+(startAt-1);
+								totalscrolls = 1440;
+								var perchapter = 60;
+								let lastscroll = totalscrolls+(startAt-1);
 								var totalChapters = Math.ceil(totalscrolls / perchapter);
-								var custom = my.shuffle(book.slice(startAt, book.length-1));
+								custom = my.shuffle(book.slice(startAt, book.length-1));
 								custom = custom.slice(startAt, lastscroll);
 
 								for(var u = 0; u < 24; u++){custom[((u*60)+(Math.ceil(Math.random() * 57)))] = uniques[u];}
@@ -82588,9 +82605,10 @@ function convertBase(value, from_base, to_base) {
 								scrolls += audiobook;
 								break;
 							case 'book2' :
-								var perchapter = 60, totalscrolls = 1440;
+								totalscrolls = 1440;
+								var perchapter = 60;
 								var totalChapters = Math.ceil(totalscrolls / perchapter);
-								var custom = my.shuffle(book.slice(startAt,(totalscrolls+startAt)));
+								custom = my.shuffle(book.slice(startAt,(totalscrolls+startAt)));
 								custom.push(book[book.length-1]);
 
 								for (scroll = 0; scroll < custom.length; scroll++) {
@@ -82612,16 +82630,19 @@ function convertBase(value, from_base, to_base) {
 								scrolls = "<section class='scrolls " + isType + "'>" + preface + final.join("") + "</section>";
 								scrolls += audiobook;
 								break;
-							case 'book3' :
-								var totalscrolls = (book.length-1)-startAt;
-								//var custom = book.slice(startAt, totalscrolls);
-								//var custom = my.shuffle(book.slice(startAt, totalscrolls));
-								var custom = book.slice(startAt, totalscrolls);
+							case 'longest' :
+								totalscrolls = (book.length-1)-startAt;
+								custom = book.slice(startAt, totalscrolls);
 								custom.sort((a, b) => b.length - a.length);
-								var preface = (book.slice((startAt-1),startAt)).join("") + '<br /><br /><br /><br /><br /><br />'; 
-								scrolls = "<section class='scrolls " + isType + "'>" + (custom.slice(7999,10084)).join("") + book[book.length-1] + "</section>";
+								scrolls = "<section class='scrolls " + isType + "'>" + (custom.slice(1,100)).join("") + book[book.length-1] + "</section>";
 								const lengths = custom.map(array => array.length);
 								console.dir(lengths);
+								break;
+							case 'widest' :
+								totalscrolls = (book.length-1)-startAt;
+								let bigscrolls = pages.slice(startAt, totalscrolls);
+								bigscrolls.sort((a, b) => b.length - a.length);
+								scrolls = "<section class='scrolls frame'>" + (bigscrolls.slice(0,80)).join("") + "</section>";
 								break;
 							case 'uniques' :
 								xhr.open('GET', 'https://02b7cf4.netsolhost.com/json.php');
@@ -82671,7 +82692,7 @@ function convertBase(value, from_base, to_base) {
 							case 'wall' :
 								var pp = 3;
 								var perpage = 15;
-								var custom = my.shuffle(pages.slice(startAt)).slice(0,perpage*pp);
+								custom = my.shuffle(pages.slice(startAt)).slice(0,perpage*pp);
 								custom[0] = pages[4];
 								custom[custom.length-1] = pages[pages.length-1];
 								scrolls = "<section class='scrolls " + isType + "'>" + custom.join("") + "</section>";
@@ -82679,7 +82700,7 @@ function convertBase(value, from_base, to_base) {
 							case 'promo' :
 								var pp = 1;
 								var perpage = 14;
-								var custom = my.shuffle(pages.slice(startAt)).slice(0,perpage*pp);
+								custom = my.shuffle(pages.slice(startAt)).slice(0,perpage*pp);
 								var blob = custom.join("");
 								/*blob = blob.replace(/<sup>(.*?)<\/sup>/g,function(x){
 									let fMonth = Math.floor(Math.random() * (MONTHS.length-1));
@@ -82695,7 +82716,7 @@ function convertBase(value, from_base, to_base) {
 							default :
 								var pp = 5;
 								var perpage = 16;
-								var custom = my.shuffle(pages.slice(startAt)).slice(0,perpage*pp);
+								custom = my.shuffle(pages.slice(startAt)).slice(0,perpage*pp);
 								/*var custom = pages.slice(startAt, totalscrolls);
 								custom.sort((a, b) => b.length - a.length);
 								scrolls = "<section class='scrolls " + isType + "'>" + (custom.slice(0,perpage*pp)).join("") + "</section>";*/
@@ -82705,7 +82726,7 @@ function convertBase(value, from_base, to_base) {
 
 					} else {
 
-						console.log('-----NOT (modes.includes(isType) || (location.search && isNaN(convertBase(my.strQuery(),23,10))))');
+						console.log('-----NOT (modes.includes(isType) || (location.search && isNaN(parseInt(my.strQuery(),23)))');
 
 						function dayOptions(numDay) {return '<option value=\"' + numDay + '\">' + numDay + nth(numDay) + '</option>';}
 						function monthOptions(numMonth) {return '<option value=\"' + numMonth + '\">' + (MONTHS[numMonth-1]).substr(0,3) + '</option>';}
@@ -82713,15 +82734,37 @@ function convertBase(value, from_base, to_base) {
 						const numMonths = Array.from(Array(12), (e,i)=>i+1);
 						const selMonths = numMonths.map(monthOptions);
 						const selDays = numDays.map(dayOptions);
-						const ad = "Get the <i>Take-a-Moment</i> App";
+						const button1 = `<button type="button">
+    <svg class="svg-icon" role="img" aria-hidden="true" focusable="false" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.935 22.935" xml:space="preserve">
+	<g>
+		<path d="M20.836,21.205V0.785C20.836,0.159,20.049,0,20.049,0H4.458c-2.359,0-2.36,1.954-2.36,1.954v20.143
+			c0,0.461,0.374,0.838,0.839,0.838h15.105c0.462,0,0.838-0.377,0.838-0.838l1.115-0.002C20.899,22.095,20.836,21.205,20.836,21.205z
+			 M5.578,13.994c-0.313-0.104-0.567-0.244-0.567-0.426c0-0.472,0-1.649,0-2.321c0-0.259,0.254-0.441,0.567-0.57V13.994z
+			 M10.587,16.635c0,0.517-0.597,0.017-0.597,0.017l-3.255-2.414c0,0-0.311-0.035-0.668-0.113V10.52
+			c0.357-0.087,0.668-0.12,0.668-0.12l3.327-2.483c0,0,0.525-0.396,0.525,0.009C10.587,8.397,10.587,16.116,10.587,16.635z
+			 M12.497,15.222c-0.183,0-0.366-0.07-0.503-0.214c-0.272-0.276-0.267-0.721,0.011-0.994c0.594-0.581,0.885-1.171,0.864-1.755
+			c-0.033-0.927-0.82-1.619-0.827-1.627c-0.297-0.25-0.333-0.694-0.083-0.991c0.251-0.296,0.697-0.333,0.992-0.082
+			c0.052,0.043,1.27,1.095,1.325,2.648c0.036,0.999-0.398,1.946-1.288,2.815C12.852,15.155,12.675,15.222,12.497,15.222z
+			 M15.278,16.243c-0.137,0.132-0.315,0.199-0.493,0.199c-0.184,0-0.366-0.071-0.503-0.213c-0.271-0.276-0.266-0.724,0.011-0.995
+			c1.004-0.979,1.495-1.993,1.458-3.015c-0.057-1.606-1.407-2.797-1.421-2.807c-0.297-0.252-0.333-0.695-0.082-0.993
+			c0.252-0.296,0.696-0.332,0.993-0.081c0.074,0.062,1.838,1.583,1.917,3.831C17.208,13.603,16.576,14.973,15.278,16.243z
+			 M19.747,20.788c0,0-0.149,0.547-0.867,0.547v-6.543V2.828c0-0.462-0.375-0.838-0.838-0.838L3.749,1.984
+			c0-0.577,0.866-0.869,0.866-0.869H18.88c0.893,0,0.867,0.786,0.867,0.786V20.788z"/>
+	</g>
+	</svg>
+  <span class="visually-hidden">
+      Hear the Author
+  </span>
+</button>`;
+						const ad = "<form><span class='app'>Get the <i>Take-a-Moment</i> App</span></form>";
 						const vo = "https://02b7cf4.netsolhost.com/audio/q" + (Math.floor(Math.random() * 520) + 1) + ".mp3";
-						const nav = !(window.location.hostname).includes(app) ? "<form onsubmit='return openBook();'><span>A <i class='fa fa-gift' aria-hidden='true'></i> for their</span><select id='theMonth'>" + selMonths + "</select><select id='theDay'>" + selDays + "</select><button type='submit' name='submit'><i class='fa fa-birthday-cake' aria-hidden='true'></i></button></form>" : "<form><span class='app'>" + ad + "<span></form>";
-						const voice = "<figure><sup>0</sup><div class='audio-player'><audio src='" + vo + "'></audio><div class='controls'><button class='player-button'><i class='fa fa-play' aria-hidden='true'></i></button><input type='range' class='timeline' max='100' value='0'><button class='sound-button'><i class='fa fa-volume-up' aria-hidden='true'></i></button></div></div></figure>";
-						const bookagent = "<a href='tel:+16177856994' title='Call for a Personalized Birthday Book' class='bookagent'><i class='fa-kit fa-light-phone-flip-sparkle' aria-hidden='true'></i></a>";
+						const wk = "<form onsubmit='return openBook();'><span>A</span>" + button1 + "<span> for their</span><select id='theMonth'>" + selMonths + "</select><select id='theDay'>" + selDays + "</select>" + button1 + "</form>";
+						const nav = !(window.location.hostname).includes(app) ?  wk : ad;
+						const bookagent = "<figure><div class='audio-player'><audio src='" + vo + "'></audio><div class='controls'><button class='player-button'><i class='fa-solid fa-circle-play' aria-hidden='true'></i></button></div></div></figure>";
 
 						//scrolls = "<section class='scrolls cover'>" + pages[0] + nav + "</section>";
 
-						scrolls = "<section class='scrolls cover'>" +  pages[0] + voice + nav + bookagent + "</section>";
+						scrolls = "<section class='scrolls cover'>" +  pages[0] + nav + bookagent + "</section>";
 						if (!isType && !location.search) {setInterval(my.journey,30000,true);}
 					}
 
