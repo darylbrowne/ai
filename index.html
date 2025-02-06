@@ -514,6 +514,12 @@
 			   vertical-align: middle;
 			}
 
+			.svg-icon.svg-gift{
+					height: 5vw;
+					width: 5vw;
+					top: .5vw;
+			}
+
 			.visually-hidden {
 			    position: absolute;
 			    height: 1px;
@@ -1024,7 +1030,7 @@ audio {
 			form span {
 			    vertical-align: middle;
 			    font-size: 3vw;
-			    margin-top: .1em;
+					margin: .1em .5vw 0 0;			    
 			    display: inline-block;
 			}
 			.app {
@@ -82760,27 +82766,25 @@ function convertBase(value, from_base, to_base) {
 						const selMonths = numMonths.map(monthOptions);
 						const selDays = numDays.map(dayOptions);
 						const button1 = `<button type="button">
-														    <svg class="svg-icon" role="img" aria-hidden="true" focusable="false"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.935 22.935" xml:space="preserve">
-<path d="M3 3V0H5C6.65685 0 8 1.34315 8 3C8 1.34315 9.34315 0 11 0H13V3H16V6H0V3H3Z" />
-<path d="M1 8H7V15H1V8Z" />
-<path d="M15 8H9V15H15V8Z" />
-						</svg>
-														  <span class="visually-hidden">
-														      Give Gift
-														  </span>
+													    <svg class="svg-icon svg-gift" role="img" aria-hidden="true" focusable="false"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.935 22.935" xml:space="preserve">
+																<path d="M3 3V0H5C6.65685 0 8 1.34315 8 3C8 1.34315 9.34315 0 11 0H13V3H16V6H0V3H3Z" />
+																<path d="M1 8H7V15H1V8Z" />
+																<path d="M15 8H9V15H15V8Z" />
+															</svg>
+														  <span class="visually-hidden">Give Gift</span>
 														</button>`;
 						const button2 = `<button type="button">
 														    <svg class="svg-icon" role="img" aria-hidden="true" focusable="false" height="50px" width="50px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.935 22.935" xml:space="preserve">
-<svg class="svg-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 2C4.55228 2 5 1.55228 5 1C5 0.447715 4.55228 0 4 0C3.44772 0 3 0.447715 3 1C3 1.55228 3.44772 2 4 2Z" />
-<path d="M9 4V6H11V4H13V6C14.1046 6 15 6.89543 15 8V9H1V8C1 6.89543 1.89543 6 3 6V4H5V6H7V4H9Z" />
-<path d="M1 11V15H15V11H1Z" />
-<path d="M9 1C9 1.55228 8.55228 2 8 2C7.44772 2 7 1.55228 7 1C7 0.447715 7.44772 0 8 0C8.55228 0 9 0.447715 9 1Z" />
-<path d="M12 2C12.5523 2 13 1.55228 13 1C13 0.447715 12.5523 0 12 0C11.4477 0 11 0.447715 11 1C11 1.55228 11.4477 2 12 2Z" />
-</svg>
-														  <span class="visually-hidden">
-														      Order Birthday Book
-														  </span>
+																<svg class="svg-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M4 2C4.55228 2 5 1.55228 5 1C5 0.447715 4.55228 0 4 0C3.44772 0 3 0.447715 3 1C3 1.55228 3.44772 2 4 2Z" />
+																<path d="M9 4V6H11V4H13V6C14.1046 6 15 6.89543 15 8V9H1V8C1 6.89543 1.89543 6 3 6V4H5V6H7V4H9Z" />
+																<path d="M1 11V15H15V11H1Z" />
+																<path d="M9 1C9 1.55228 8.55228 2 8 2C7.44772 2 7 1.55228 7 1C7 0.447715 7.44772 0 8 0C8.55228 0 9 0.447715 9 1Z" />
+																<path d="M12 2C12.5523 2 13 1.55228 13 1C13 0.447715 12.5523 0 12 0C11.4477 0 11 0.447715 11 1C11 1.55228 11.4477 2 12 2Z" />
+																</svg>
+															  <span class="visually-hidden">
+															      Order Birthday Book
+															  </span>
 														</button>`;
 						const button3 = `<button id="player-button" class="player-button" type="button">
 														    <svg class="svg-bookagent" role="img" aria-hidden="true" focusable="false"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.935 22.935" xml:space="preserve">
