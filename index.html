@@ -1044,6 +1044,9 @@ audio {
 				margin: 0 .5em;
 				color-scheme: light;				
 			}
+			select option {
+				text-align: center;
+			}
 			input[type='image'], button {
 				width: 5vw;
 				height: auto;
@@ -82757,10 +82760,14 @@ function convertBase(value, from_base, to_base) {
 
 						function dayOptions(numDay) {return '<option value=\"' + numDay + '\">' + numDay + nth(numDay) + '</option>';}
 						function monthOptions(numMonth) {return '<option value=\"' + numMonth + '\">' + (MONTHS[numMonth-1]).substr(0,3) + '</option>';}
+						function volOptions(numVol) {return '<option value=\"' + numVol + '\">' + numVol + '</option>';}
+
+						const numVols = Array.from(Array(1), (e,i)=>i+1);
 						const numDays = Array.from(Array(31), (e,i)=>i+1);
 						const numMonths = Array.from(Array(12), (e,i)=>i+1);
 						const selMonths = numMonths.map(monthOptions);
 						const selDays = numDays.map(dayOptions);
+						const selVols = numVols.map(volOptions);
 						const button1 = `<button type="button">
 													    <svg class="svg-icon svg-gift" role="img" aria-hidden="true" focusable="false"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22.935 22.935" xml:space="preserve">
 																<path d="M3 3V0H5C6.65685 0 8 1.34315 8 3C8 1.34315 9.34315 0 11 0H13V3H16V6H0V3H3Z" />
@@ -82806,7 +82813,7 @@ function convertBase(value, from_base, to_base) {
 														</button>`;
 						const ad = "<form><span class='app'>Get the <i>Take-a-Moment</i> App</span></form>";
 						const vo = "https://02b7cf4.netsolhost.com/audio/q" + (Math.floor(Math.random() * 520) + 1) + ".mp3";
-						const wk = "<form onsubmit='return openBook();'>" + button1 + "<select id='theMonth'>" + selMonths + "</select><select id='theDay'>" + selDays + "</select>" + button2 + "</form>";
+						const wk = "<form onsubmit='return openBook();'><select id='theMonth'>" + selMonths + "</select><select id='theDay'>" + selDays + "</select><select id='theVolume'><option value=\"\">Vol.</option>" + selVols + "</select>" + button1 + "</form>";
 						const nav = !(window.location.hostname).includes(app) ?  wk : ad;
 						const bookagent = "<figure><div class='audio-player'><audio src='" + vo + "'></audio><div class='controls'>" + button3 + "</div></div></figure>";
 
