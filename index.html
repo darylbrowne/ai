@@ -4,8 +4,8 @@
 	<title>You're Exactly Where You're Supposed to Be</title>
 	<meta charset="ASCII">
 	<meta http-equiv="content-type" content="text/html; charset=ASCII">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">	
 	<meta name="application-name" content="You're Exactly Where You're Supposed to Be">
 	<meta name="author" content="Daryl Browne">
@@ -82897,7 +82897,12 @@ if (audio) {
   window.addEventListener('elevenlabs-convai:call', (event) => {
     event.detail.config.clientTools = {
 	    pickDate: async ({chosenDate}) => {
-	      console.log(chosenDate);
+	      let arrDate = chosenDate.split('-');
+	      let intMonth = parseInt(arrDate[0]);
+	      let intDate = parseInt(arrDate[1]);
+	      document.getElementById('theMonth').selectedIndex = (intMonth-1);
+	      document.getElementById('theDay').selectedIndex = (intDate-1);
+	      document.getElementById('theVolume').selectedIndex = 1;
 	    }
 	  }
 	});
