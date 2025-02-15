@@ -82489,9 +82489,10 @@ function convertBase(value, from_base, to_base) {
 					let jsonResponse = {};
 					const xhr = new XMLHttpRequest();
 
-					
+										
 					hash = Number(my.strHash()) || my.strHash();
 					qstr = Number(my.strQuery()) || my.strQuery();
+					toURL = window.location.hostname ? window.location.origin : window.location;
 
 					console.log('%%%%%%%  ' + hash);
 					console.log('%%%%%%%  ' + qstr);
@@ -82526,13 +82527,13 @@ function convertBase(value, from_base, to_base) {
 						let userAgent = navigator.userAgent;
 						let platform;
 						if (userAgent.includes('Android')) {
-						  platform =  'https://www.google.com'; // Android
+						  platform = window.location.origin; // Android
 						} else if (userAgent.includes('iPhone') || userAgent.includes('iPad')) {
-						  platform = 'https://www.apple.com'; // iOS
+						  platform = window.location.origin; // iOS
 						} else {
-						  platform = toURL; // Windows App
+						  platform = window.location.origin; // Windows App
 						}					
-						pages.push('<a href="' + platform + '"><article><div><p>' + my.journey() + '</p></div></article></a>');
+						pages.push('<a href="' + toURL + '"><article><div><p>' + my.journey() + '</p></div></article></a>');
 					} else {
 						pages.push('<a href="' + toURL + '"><article><div><p>' + my.journey() + '</p></div></article></a>');
 						console.log('2.5 continues...');
