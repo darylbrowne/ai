@@ -82909,7 +82909,25 @@ if (audio) {
 	      document.getElementById('theMonth').selectedIndex = (intMonth-1);
 	      document.getElementById('theDay').selectedIndex = (intDate-1);
 	      document.getElementById('theVolume').selectedIndex = 1;
-	    }
+	    },
+      redirectToEmail: ({ body }) => {
+        const encodedSubject = 'To Daryl Browne via BookAgent';
+        const encodedBody = encodeURIComponent(body);
+        window.open(
+          `mailto:darylbrowne@darylbrowne.com?subject=${encodedSubject}&body=${encodedBody}`,
+          '_blank'
+        );
+      },
+      redirectToSMS: ({ body }) => {
+        const encodedBody = encodeURIComponent(body);
+        window.open(
+          `sms://+16177856994;?&body=${encodedBody}`,
+          '_blank'
+        );
+      },
+      submitForm: ({ answer }) => {
+        document.getElementById('form').submit();
+      },	    
 	  }
 	});
 
